@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-'''Task 10's module.
-'''
-from typing import Any, Sequence, Union
+""" Duck typing - first element of a sequence """
+from typing import Any, Union, Sequence
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    '''Retrieves the first element of a sequence if it exists.
-    '''
+    """returns first element of list or None"""
     if lst:
         return lst[0]
     else:
